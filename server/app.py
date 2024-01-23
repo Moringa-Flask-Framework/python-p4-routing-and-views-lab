@@ -15,10 +15,10 @@ def print_string(param):
 
 @app.route('/count/<int:num>')
 def count(num):
-    numbers =[]
+    numbers = f''
     # x=0
-    for n in range(0, num+1):
-        numbers.append(n)
+    for n in range(num):
+        numbers+= f'{n}\n'
     # for numb in numbers:
     #     return numb
     return numbers
